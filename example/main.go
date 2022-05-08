@@ -23,15 +23,15 @@ func main() {
 		panic(err)
 	}
 
-	// cid := putSingleFile(c)
+	cid := putSingleFile(c)
 	// getStatusForCid(c, cid)
 	// getStatusForKnownCid(c)
-	getFiles(c)
+	//getFiles(c)
 	// listUploads(c)
 }
 
 func putSingleFile(c w3s.Client) cid.Cid {
-	file, err := os.Open("images/donotresist.jpg")
+	file, err := os.Open("iso.iso")
 	if err != nil {
 		panic(err)
 	}
