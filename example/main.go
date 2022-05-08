@@ -24,6 +24,7 @@ func main() {
 	}
 
 	cid := putSingleFile(c)
+	fmt.Printf("https://%v.ipfs.dweb.link\n", cid)
 	// getStatusForCid(c, cid)
 	// getStatusForKnownCid(c)
 	//getFiles(c)
