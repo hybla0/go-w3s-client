@@ -32,7 +32,7 @@ func main() {
 }
 
 func putSingleFile(c w3s.Client) cid.Cid {
-	file, err := os.Open("iso.iso")
+	file, err := os.Open("../iso.iso")
 	if err != nil {
 		panic(err)
 	}
